@@ -4,7 +4,7 @@ services:
   github:
     image: 'alpine/git'
     environment:
-      - GIT_REPO=https://github.com/David-kdw/Devops_project
+      - GIT_REPO=https://github.com/David-kdw/devoir_devops
     volumes:
       - './jenkins:/repo'
     command: 'clone $GIT_REPO /repo'
@@ -17,7 +17,7 @@ services:
     environment:
       - SONAR_HOST_URL=http://localhost:9000
       - SONAR_LOGIN=admin
-      - GITHUB_REPO=https://github.com/David-kdw/Devops_project
+      - GITHUB_REPO=https://github.com/David-kdw/devoir_devops
       - GITHUB_TOKEN=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
     volumes:
       - './jenkins:/var/jenkins_home'
