@@ -1,2 +1,2 @@
-# devoir_devops
- Test of CI/CD
+# Devops_project
+ Repositroy for CI/CD with Docker and Jenkins
