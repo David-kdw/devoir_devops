@@ -5,7 +5,7 @@ pipeline {
         
         stage('Build') {
             steps {
-                sh 'chmod +x docker-compose'
+                sh 'chmod +x ./docker-compose'
                 sh './docker-compose build'
             }
         }
