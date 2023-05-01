@@ -18,7 +18,7 @@ services:
       - SONAR_HOST_URL=http://localhost:9000
       - SONAR_LOGIN=admin
       - GITHUB_REPO=https://github.com/David-kdw/devoir_devops
-      - GITHUB_TOKEN=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
+      - GITHUB_TOKEN=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
     volumes:
       - './jenkins:/var/jenkins_home'
       - '/var/run/docker.sock:/var/run/docker.sock'
