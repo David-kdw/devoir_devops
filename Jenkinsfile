@@ -26,7 +26,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh './docker-compose up -d'
+                sh 'nohup ./docker-compose up -d &'
             }
         }
     }
