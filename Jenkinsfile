@@ -1,21 +1,8 @@
 pipeline {
     agent any
 
-    environment {
-        DOCKER_HOST = "tcp://localhost:2375"
-    }
-
     stages {
-        stage('Verify tooling') {
-            steps {
-                sh '''
-                    docker info
-                    docker version 
-                    docker compose version 
-                    jq --version 
-                '''
-            }
-        }
+        
         stage('Build') {
             steps {
                 sh 'chmod +x docker-compose'
